@@ -36,6 +36,8 @@ def informasi() :
     st.image("https://andygrunwald.com/images/posts/playing-rock-paper-scissors-with-500-people/rock-paper-scissors-game-rules.png", caption="Peraturan Permainan")
     if st.button("Selengkapnya") :
         st.write("Permainan Rock Paper Scissors dibuat menggunakan algoritma AI dengan bahasa pemrograman python, framework yang digunakan yaitu YOLOv8 untuk pembuatan model klasifikasinya dan Streamlit untuk interface dari permainan ini.")
+        st.write("Berikut statistik dari model yang dibuat: ")
+        st.image("./runs/classify/train/results.png")
 
 def rules_game(p1, p2, score):
     if (p1 == p2) :
