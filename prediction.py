@@ -1,5 +1,4 @@
 from ultralytics import YOLO
-from ultralytics.models.yolo.detect.predict import DetectionPredictor
 import imageio.v3 as iio
 
 def model_train():
@@ -15,8 +14,3 @@ def predict_image(file_path):
     result = model_data(file_path)
     print(result)
     return result[0].names[result[0].probs.top1]
-
-def predict_cap():
-    model_data = model_train()
-    result = model_data.predict(source="0", show=True, conf=0.5)
-    print(result[0].names[result[0].probs.top1])
