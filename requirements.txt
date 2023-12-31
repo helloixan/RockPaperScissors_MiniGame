@@ -1,0 +1,5 @@
+ultralytics==8.0.229
+imageio==2.33.1
+imageio-ffmpeg==0.48
+emoji==2.9.0
+opencv-python==4.8.1.78
