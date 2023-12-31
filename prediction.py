@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import imageio.v3 as iio
+import cv2
 
 def model_train():
     model = YOLO('./runs/classify/train/weights/best.pt')
