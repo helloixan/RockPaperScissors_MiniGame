@@ -72,6 +72,8 @@ def start_game():
             st.text(f"{nama}: {convert_choice(player_choice)}\nHasil:")
             score = rules_game(player_choice, libra_choice, score)
             st.write(f"Score kamu: {score}")
+            if st.button("Mulai lagi"):
+                start_game()
                 
             
 def sidebar():
