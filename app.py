@@ -41,15 +41,15 @@ def informasi() :
 
 def rules_game(p1, p2, score):
     if (p1 == p2) :
-        st.image(DrawImages(), width=500)
         st.write("SERI!")
+        st.image(DrawImages(), width=500)
     elif ((p1 == "paper" and p2 == "rock") or (p1 == "rock" and p2 == "scissors") or (p1 == "scissors" and p2 == "paper")) :
-        st.image(WinImages(), width=500)
         st.write("Kamu Menang!")
+        st.image(WinImages(), width=500)
         score += 1
     else :
-        st.image(LoseImages(), width=500)
         st.write("Kamu Kalah!")
+        st.image(LoseImages(), width=500)
         if score > 0 :
             score -= 1
     return score
