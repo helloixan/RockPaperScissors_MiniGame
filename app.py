@@ -91,7 +91,7 @@ def ask_libra():
 def sidebar():
     st.sidebar.image("./images/logo_sidebar.png", width=100)
     st.sidebar.title('Menu')
-    choice = st.sidebar.radio(label="Pilihan", options=[f"{emoji_list['information']}Informasi", f"{emoji_list['game']}Mulai Permainan",f"{emoji_list['libra']}Libra", f"{emoji_list['person']}Tentang Kami"])
+    choice = st.sidebar.radio(label="Pilihan", options=[f"{emoji_list['information']}Informasi", f"{emoji_list['game']}Mulai Permainan", f"{emoji_list['libra']} Libra", f"{emoji_list['person']}Tentang Kami"])
     if choice == f"{emoji_list['information']}Informasi":
         informasi()
     elif choice == f"{emoji_list['game']}Mulai Permainan" :
