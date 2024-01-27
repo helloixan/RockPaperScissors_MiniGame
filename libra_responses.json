@@ -1,0 +1,20 @@
+{
+    "sentiments":[
+        {
+            "sentiment": "perkenalan",
+            "responses": ["Halo, aku Libra, AI yang akan menjawab pertanyaan anda seputar permainan rock paper scissors!", "Hi, aku Libra ada yang bisa dibantu?", "Hai, salam kenal aku Libra!"]
+        },
+        {
+            "sentiment": "aboutus",
+            "responses": ["Permainan Rock Paper Scissors merupakan project AI Lab yang dibuat oleh kelompok 3 yang teridri dari Iksan, Zaky, dan Ghozy. \nSelengkapnya bisa dilihat pada menu Tentang kami", "Permainan ini dibuat oleh Iksan Oktav Risandy, Zaky Al Fatih, dan Muhammad Ghozy Abdurrahman. \nselengkapnya bisa dilihat pada menu Tentang kami"]
+        },
+        {
+            "sentiment": "peraturan",
+            "responses": ["Permainan Rock Paper Scissors pada web ini memiliki prosedur sebagai berikut: \n1. Libra (Komputer) akan memutuskan pilihan terlebih dahulu  \n2. Pemain menentukan pilihannya berdasarkan input kamera yang akan ditampilkan  \n3. Pemain akan mendapatkan hasil sesuai peraturan permainan beserta skornya \nPeraturan permainan : \n1. Rock (Batu) akan kalah terhadap Paper (kertas) \n2. Paper (Kertas) akan kalah terhadap Scissors (gunting) \n3. Scissors (gunting) akan kalah terhadap rock (batu) \n4. Pemain akan mendapatkan hasil SERI jika pilihan kedua pihak sama \nUntuk informasi lebih lanjut dapat dilihat pada menu informasi", "Cara bermain: \n1. Akses menu mulai permainan \n2. ketik nama anda \n3. Aku(Libra) akan segera memilih pilihan diantara batu, gunting, dan kertas \n3. Input kamera akan muncul untuk menentukan pilihanmu \n4. hasilnya akan segera muncul dilayar \nperaturan permainan dapat dilihat pada menu bagian informasi"]
+        },
+        {
+            "sentiment": "tujuan",
+            "responses": ["Game ini dibuat untuk menghibur pengguna dan memperkenalkan AI secara menyenangkan kepada pengguna", "Game ini bertujuan untuk menghibur dan mengisi waktu luang pengguna"]
+        }
+    ]
+}

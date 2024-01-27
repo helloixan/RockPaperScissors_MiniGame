@@ -3,6 +3,7 @@ import random as rd
 import time
 from prediction import predict_image, conver_to_img
 from assets import WinImages, LoseImages, DrawImages, emoji_list
+from responseprocessing import generate_response
 
 
 score = 0
@@ -74,6 +75,17 @@ def start_game():
             st.text(f"{nama}: {convert_choice(player_choice)}\nHasil:")
             score = rules_game(player_choice, libra_choice, score)
             st.write(f"Score kamu: {score}")
+
+def direct_chat(text, role):
+    with st.chat_message(role):
+        st.write(text)
+
+def ask_libra():
+    prompt = st.chat_input("Ketik sesuatu")
+    if prompt :
+        direct_chat(prompt, role="user")
+        response = generate_response(prompt)
+        direct_chat(response, role="assistant")
                 
             
 def sidebar():
@@ -84,6 +96,8 @@ def sidebar():
         informasi()
     elif choice == f"{emoji_list['game']}Mulai Permainan" :
         start_game()
+    elif choice == f"{emoji_list['libra']}Libra":
+        ask_libra()
     elif choice == f"{emoji_list['person']}Tentang Kami" :
         about_us()
 
