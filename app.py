@@ -96,7 +96,7 @@ def sidebar():
         informasi()
     elif choice == f"{emoji_list['game']}Mulai Permainan" :
         start_game()
-    elif choice == f"{emoji_list['libra']}Libra":
+    elif choice == f"{emoji_list['libra']} Libra":
         ask_libra()
     elif choice == f"{emoji_list['person']}Tentang Kami" :
         about_us()
