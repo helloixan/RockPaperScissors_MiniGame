@@ -17,6 +17,8 @@ dataset = pd.read_csv('./libra_sentiment.csv')
 # Preprocessing teks
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 stop_words = set(stopwords.words('english'))
 def preprocess_text(text):
